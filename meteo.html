@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Météo JS</title>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script defer src="cityStorage.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<div class="mobile-container">
+    <header>
+        <form>
+        <i class="fas fa-bars" onclick="buttonclick();" ></i>
+        <input type="text" id="input">
+        <button type="submit" id="search"><i class="fas fa-search"></i></button>
+        </form>
+        <ul id="menu" class="menuOff">
+            <h2>Villes sauvegardées</h2>
+           <!-- <li><a href="http://www.griffithswebdesign.com">Item 1</a></li>
+            <li><a href="http://www.c-sharpcorner.com">Item 2</a></li>
+            <li><a href="http://www.google.com">Item 3</a></li>
+-->
+        </ul>
+    </header>
+
+    <div id="img-container" class="owl-carousel owl-theme">
+        <div class="item">
+            <p id="city"> LONDON, ENGLAND</p>
+            <h1 id ="cityTemp">23°</h1>
+            <p id = "cityWeather">Cloudy</p></div>
+        <div class="item hour-container">
+        </div>
+    </div>
+    <div class = "week-container">
+    </div>
+
+    <div class="add-location">
+        <button class="button-location"><p> Add location</p></button>
+
+    </div>
+
+</div>
+
+</body>
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+</html>

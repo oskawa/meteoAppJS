@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&display=swap');
+
+/*--------------------
+General
+--------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input{
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    padding:0.5rem 1rem;
+}
+header button{
+    background-color: transparent;
+    border:none;
+    font-size: 1rem;
+    margin-left:10px;
+}
+
+/*--------------------
+Phone
+--------------------*/
+.mobile-container{
+    width: 350px;
+    background-color: white;
+}
+
+
+/*--------------------
+Header
+--------------------*/
+
+.fas{
+    padding-top : 0.3rem;
+    padding-right: 0.5rem;
+}
+
+/*--------------------
+imgContainer
+--------------------*/
+
+#img-container{
+    background-size:cover;
+    background-image: url('https://www.cityam.com/wp-content/uploads/2020/02/London_Tower_Bridge_City.jpg');
+}
+
+#img-container .item {
+    min-height: 261.8px;
+    color: white;
+    border-radius: 6.85px;
+    background-size:cover;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0.5rem;
+
+    width: 100%;
+    height: 13rem;
+}
+
+#city{
+    font-weight: 600;
+    margin:0;
+}
+
+#cityTemp{
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+#cityWeather{
+    margin: 0rem 1rem 2rem 1rem;
+}
+
+.hour-container{
+    display:flex;
+}
+
+.hour{
+    padding-top:3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px solid rgba(230, 219, 211, 0.53);
+    height: 100%;
+}
+
+
+/*--------------------
+principalContainer
+--------------------*/
+
+
+.week-container{
+    color: rgb(179, 179, 179);
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.day-info{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#futureTemp{
+    color: rgb(135, 135, 135);
+    padding-left:5rem;
+    font-weight: bold;
+}
+
+
+/*--------------------
+AddLocation
+--------------------*/
+
+.add-location{
+    text-align: center;
+    width: 100%;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 1rem;
+
+}
+
+.add-location p{
+    font-size: larger;
+    font-weight: bold;
+}
+.add-location:hover{
+    background-color: #626262;
+    transition: 0.3s;
+}
+
+
+.button-location{
+    border: none;
+    width: 100%;
+    height: 100%;
+    color:white;
+    background: none;
+}
+
+
+/*--------------------
+Menu
+--------------------*/
+
+
+#menu
+{
+    background-color: rgba(0, 0, 0, 0.68);
+    width:350px;
+    height: 74%;
+    position: absolute;
+    top:-68%;
+    align-items: center;
+    justify-content: center;
+    bottom:0;
+    z-index: 50;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    transition: all 1s;
+
+}
+#menu h2{
+    color: white;
+}
+#menu li{
+    padding-top:30%;
+    height: 33.33%;
+    background-color: #96A28F42;
+
+}
+
+#menu li:hover{
+    cursor: pointer;
+    background-color: rgba(150, 162, 143, 0.89);
+    transition: 0.3s;
+
+}
+#menu li a{
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 33.33%;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.menuOff
+{
+    opacity: 0;
+}
+
+.menuOn
+{
+    transform: translate(0, 114%);
+    display: block;
+}
