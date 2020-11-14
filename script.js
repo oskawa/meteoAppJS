@@ -12,7 +12,7 @@ Retrive hours and days to class elements
 --------------------*/
 var date = new Date()
 var week = new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi")
-var day = date.getDay()
+
 var h = date.getHours()
 
 /*--------------------
@@ -79,7 +79,9 @@ imgContainer.style.backgroundImage = "url('img/Thunderstorm.jpg')"
         let url2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&lang=fr&cnt=3&appid=${API_KEY}`
         fetch(url2).then((response) =>
             response.json().then((data2) => {
+            var day = date.getDay()
             for (let i = 1; i < 6; i++) {
+
     var tempDay = data2.daily[0+i].feels_like.day
     var imgDay = data2.daily[0+i].weather[0].icon
     if (day == week.length-1){
