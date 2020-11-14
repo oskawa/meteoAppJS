@@ -180,7 +180,7 @@ Menu
     width:350px;
     height: 74%;
     position: absolute;
-    top:-68%;
+    top:-77%;
     align-items: center;
     justify-content: center;
     bottom:0;
@@ -224,6 +224,6 @@ Menu
 
 .menuOn
 {
-    transform: translate(0, 114%);
+    transform: translate(0, 116%);
     display: block;
 }
