@@ -43,8 +43,6 @@ let apiCall = function(city)
         document.querySelector('#city').innerHTML = data.name
         cityTemp.innerHTML = data.main.temp + '°'
         cityWeather.innerHTML = data.weather[0].description
-
-
         /* Retrieve first number of id for weather
         For Example : 2 => Thunderstorm, 3=> Drizzle...
          */
@@ -84,12 +82,12 @@ imgContainer.style.backgroundImage = "url('img/Thunderstorm.jpg')"
             for (let i = 1; i < 6; i++) {
     var tempDay = data2.daily[0+i].feels_like.day
     var imgDay = data2.daily[0+i].weather[0].icon
-
-    day +=1
-    var ecrit = week[day]
     if (day == week.length-1){
         day = -1
     }
+    day +=1
+    var ecrit = week[day]
+    console.log(ecrit)
     weekContainer.innerHTML += '<div class = "day-info"><p id="futureDay">' + ecrit + '</p><p id="futureTemp">'+ tempDay +'°</p><img src="http://openweathermap.org/img/wn/'+imgDay+'.png"></div>'
             }
     for (let i = 0; i < 5; i++) {
@@ -207,11 +205,9 @@ function buttonclick()
 
     if (menu.className == "menuOff")
     {
-
         menu.className = "menuOn";
     } else
     {
-
         menu.className = "menuOff";
     }
 }
